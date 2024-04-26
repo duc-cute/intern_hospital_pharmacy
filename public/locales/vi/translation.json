@@ -1,0 +1,694 @@
+﻿{
+  "web_site": "HIVInfo 4.0",
+  "Dashboard": {
+    "dashboard": "Dashboard",
+    "AdministrativeUnit": "Đơn vị hành chính",
+    "HealthOganizationUnit": "Đơn vị y tế",
+    "login": "Đăng nhập",
+    "logout": "Đăng xuất",
+    "profile": "Thông tin cá nhân",
+    "analytics": {
+      "title": "Thống kê"
+    },
+    "chart": {
+      "amount": "Số lượng",
+      "chartToAgeAndSex": "Biểu đồ phân bổ theo tuổi và giới tính",
+      "pulmonaryTBType": "Phân loại Lao (Đối tượng)",
+      "statusHIV": "Tình trạng HIV",
+      "negative": "Âm tính",
+      "positive": "Dương tính",
+      "unknown": "Không rõ",
+      "total": "Tổng",
+      "latentTB": "Lao tiềm ẩn",
+      "drugResistantTB": "Lao kháng thuốc",
+      "sensitiveTB": "Lao nhạy cảm",
+      "suspectTB": "Nghi lao",
+      "totalChart": "Tổng: "
+    },
+    "notification": "Thông báo",
+    "countOnline": "Số người dùng trực tuyến",
+    "distributionOfTBCase": "Phân bố ca bệnh Lao",
+    "men": "Nam",
+    "women": "Nữ",
+    "children": "Trẻ em",
+    "detection": "Chỉ tiêu phát hiện",
+    "target": "chỉ tiêu",
+    "enrollment": "Chỉ tiêu điều trị",
+    "treatmentOutcomes": "BN đang điều trị",
+    "increaseOverLastYearUp": "tăng so với năm trước",
+    "increaseOverLastYearDown": "giảm so với năm trước",
+    "administrativeHierarchy": "Phân cấp hành chính",
+    "view": "Xem",
+    "exportToExcel": "Xuất Excel",
+    "topFiveDTUWithMDRTBCases": "05 đơn vị điều trị Lao Kháng Thuốc điển hình",
+    "casesByProvince": "Số liệu phát hiện và điều trị theo đơn vị hành chính",
+    "locality": "Đơn vị/cơ sở",
+    "notOnTreatment": "Hoàn thành điều trị",
+    "onTreatment": "Đang điều trị",
+    "transferIn": "Chuyển đến",
+    "transferOut": "Chuyển đi",
+    "viewReport": "Xem số liệu",
+    "fromQuarter": "Từ quý",
+    "toQuarter": "Đến quý",
+    "fromYear": "Từ năm",
+    "toYear": "Đến năm",
+    "hivPercent": "HIV +",
+    "womenPercent": "Số bệnh nhân nữ",
+    "age": "tuổi",
+    "ageUnder15": "< 15 tuổi",
+    "nameUnit": "Đơn vị/cơ sở",
+    "completedTreatment": "Kết thúc điều trị",
+    "beingTreated": "Đang điều trị",
+    "moveIn": "Chuyển đến",
+    "moveAway": "Chuyển đi"
+  },
+  "validation": {
+    "code": "Chưa nhập mã!",
+    "value": "Chưa nhập giá trị!",
+    "required": "Đây là trường bắt buộc",
+    "invalidDateMessage": "Ngày không hợp lệ",
+    "maxDateMessage": "Không được quá ngày hiện tại",
+    "email": "Chưa nhập email!"
+  },
+  "navigation": {
+    "dashboard": "Tổng quan",
+    "patientManagement": "Quản lý bệnh nhân",
+    "drug": "Kho thuốc",
+    "labTest": "Xét nghiệm",
+    "report": "Báo cáo thống kê",
+    "directory": "Danh mục",
+    "administrative-unit": "Đơn vị hành chính",
+    "health-oganization-unit": "Đơn vị y tế",
+    "ethnics": "Dân tộc",
+    "regimenName": "Phác đồ",
+    "unit": "Đơn vị",
+    "information": "Thông tin",
+    "regimen": "Phác đồ điều trị",
+    "regimenPhase": "Giai đoạn phác đồ",
+    "medication": "Thuốc",
+    "concept": "Khái niệm",
+    "country": "Quốc gia",
+    "religion": "Tôn giáo",
+    "profession": "Nghề nghiệp",
+    "concept-lab-test": "Xét nghiệm",
+    "concept-diagnostic": "Chẩn đoán",
+    "concept-symptom": "Triệu chứng",
+    "concept-image-study-finding": "Chẩn đoán hình ảnh",
+    "staff": "Nhân viên y tế",
+    "specimen": "Mẫu bệnh phẩm",
+    "specimenType": "Loại bệnh phẩm",
+    "healthDepartment": "Phòng ban y tế",
+    "stockKeepingUnit": "Đơn vị tính",
+    "source": "Nguồn",
+    "region": "Vùng miền",
+    "user": "Tài khoản người dùng",
+    "medicationName": "Tên thuốc",
+    "pulmonary-tb-type": "Phân loại lao phổi",
+    "systemConfig": "Cấu hình hệ thống",
+    "store": "Danh mục kho",
+    "attribute": "Thuộc tính",
+    "manage": {
+      "title": "Quản trị",
+      "user": "Quản trị người dùng",
+      "role": "Quản trị vai trò",
+      "personal_info": "Thông tin cá nhân",
+      "change_password": "Thay đổi mật khẩu",
+      "org_info": "Thông tin đơn vị",
+      "profile": "Thông tin cá nhân",
+      "list_user": "Danh sách nhân viên",
+      "store-organization": "Danh sách cơ sở sử dụng dịch vụ"
+    },
+    "list": "Danh sách",
+    "product": "Hàng hóa",
+    "supplier": "Nhà cung cấp",
+    "inventoryReport": "BC tồn kho",
+    "category": "Danh mục",
+    "inventoryByCategoryReport": "BC tồn kho theo danh mục Thuốc/vật tư y tế"
+  },
+  "general": {
+    "you_are_here": "Bạn đang ở đây:",
+    "home": "Trang chủ",
+    "category": "Danh mục",
+    "clearFilter": "Xóa bộ lọc",
+    "listOfUnits": "Danh sách đơn vị",
+    "moreUnits": "Thêm đơn vị",
+    "button": {
+      "add": "Thêm mới",
+      "delete": "Xóa",
+      "save": "Lưu",
+      "cancel": "Hủy",
+      "edit": "Chỉnh sửa",
+      "select": "Lựa chọn",
+      "filter": "Bộ lọc",
+      "search": "Tìm kiếm",
+      "back": "Trở lại",
+      "update": "Cập nhật",
+      "import": "Nhập",
+      "importExcel": "Nhập Excel",
+      "select_file": "Chọn tệp",
+      "size": "Kích thước",
+      "file_name": "Tên tệp",
+      "close": "Đóng",
+      "remove": "Xoá",
+      "upload": "Tải lên",
+      "send": "Gửi",
+      "deselect": "Bỏ chọn",
+      "actionCan": "Có thể thực hiện",
+      "advanceSearch": "Tìm kiếm nâng cao",
+      "titleSearch": "Nhập mã BNQL/Số ĐKĐT/Điện thoại/Họ tên để tìm kiếm",
+      "deleteVotes": "Xóa phiếu",
+      "deleteFilter": "Xóa bộ lọc",
+      "print": "In",
+      "collapse": "Thu gọn",
+      "printSheet": "In phiếu chuyển",
+      "printMedicationRecordSheet": "In tờ phơi bệnh án",
+      "sendEmail": "Gửi Email",
+      "labTestLabelSearch": "Nhập mã BNQL/Họ tên/CCCD để tìm kiếm"
+    },
+    "popup": {
+      "select": "Chọn",
+      "code": "Mã",
+      "name": "Tên"
+    },
+    "no": "STT",
+    "action": "Thao tác",
+    "enter_search": "Nhập từ khóa tìm kiếm",
+    "rows_per_page": "Số hàng mỗi trang:",
+    "required": "Đây là trường bắt buộc",
+    "language": "Ngôn ngữ",
+    "emptyDataMessageTable": "Không có dữ liệu",
+    "empty_file": "Trống",
+    "total_rows": "Tổng số bản ghi:",
+    "goto_page": "Đi tới trang:",
+    "to_homepage": "Đi đến trang chủ",
+    "exportData": "Xuất dữ liệu",
+    "close": "Đóng",
+    "no_warning": "Không có cảnh báo",
+    "advancedsearch": "Bộ lọc",
+    "selectDataToExport": "Chưa chọn dữ liệu",
+    "search_by_name": "Tìm kiếm theo tên thẻ",
+    "no_noti": "Không có thông báo"
+  },
+  "toast": {
+    "error": "Có lỗi xảy ra, vui lòng thử lại!",
+    "delete_success": "Đã xóa thành công!",
+    "please_select": "Hãy chọn ít nhất 1 mục để xóa!",
+    "duplicate_code": "Mã đã được sử dụng!",
+    "update_success": "Cập nhật thành công!",
+    "add_success": "Thêm mới thành công!",
+    "user_exist": "Tên đăng nhập đã tồn tại!",
+    "change_password_success": "Đã thay đổi mật khẩu!",
+    "change_password_failure": "Có lỗi khi thay đổi mật khẩu!",
+    "update_fail": "Có lỗi xảy ra khi cập nhật!",
+    "add_fail": "Có lỗi xảy ra khi thêm mới!",
+    "get_fail": "Có lỗi xảy ra, vui lòng thử lại!",
+    "delete_fail": "Có lỗi xảy ra, vui lòng thử lại!"
+  },
+  "patient": {
+    "title": "Quản lý bệnh nhân",
+    "lastName": "Họ",
+    "firstName": "Tên",
+    "displayName": "Tên đầy đủ",
+    "medicalIdentifier": "Mã định danh y tế",
+    "idNumber": "CMND/CCCD",
+    "passportNumber": "Hộ chiếu",
+    "medicalInsurance": "Số bảo hiểm y tế",
+    "birthDate": "Ngày sinh",
+    "age": "Tuổi",
+    "carrer": "Nghề nghiệp",
+    "province": "Tỉnh/Thành phố",
+    "distric": "Quận/Huyện",
+    "commune": "Xã/Phường",
+    "detail": "Địa chỉ chi tiết",
+    "adminitractive": "Thông tin hành chính",
+    "episodeOfCares": "Đợt điều trị",
+    "encounter": "Thăm khám"
+  },
+  "administrative_unit": {
+    "title": "Đơn vị hành chính",
+    "code": "Mã",
+    "name": "Tên",
+    "description": "Mô tả",
+    "parent": "Đơn vị quản lý"
+  },
+  "health-oganization-unit": {
+    "title": "Đơn vị y tế",
+    "code": "Mã",
+    "name": "Tên",
+    "description": "Mô tả",
+    "parent": "Đơn vị quản lý",
+    "adminUnit": "Đơn vị hành chính",
+    "orgType": "Loại đơn vị"
+  },
+  "healthOrg": {
+    "title": "Đơn vị y tế",
+    "code": "Mã",
+    "name": "Tên",
+    "description": "Mô tả",
+    "parent": "Đơn vị quản lý",
+    "select": "Lựa chọn đơn vị"
+  },
+  "ethnicity": {
+    "title": "Dân tộc",
+    "code": "Mã",
+    "name": "Tên",
+    "description": "Mô tả"
+  },
+  "medication": {
+    "title": "Thuốc",
+    "code": "Mã thuốc",
+    "name": "Tên thuốc",
+    "manufacturer": "Nhà sản xuất",
+    "remainingDrug": "Số lượng còn lại (viên/chai)"
+  },
+  "regimenPhase": {
+    "title": "Giai đoạn của phác đồ",
+    "code": "Mã",
+    "name": "Tên giai đoạn",
+    "duration": "Khoảng thời gian",
+    "regimen": "Phác đồ điều trị"
+  },
+  "regimen": {
+    "code": "Mã phác đồ",
+    "name": "Tên phác đồ",
+    "type": "Loại phác đồ",
+    "title": "Phác đồ điều trị",
+    "start_date": "Ngày bắt đầu",
+    "end_date": "Ngày kết thúc",
+    "end_reason": "Lý do kết thúc",
+    "select": "Lựa chọn phác đồ",
+    "medication": "Thuốc",
+    "numberDays": "Số lượng ngày",
+    "totalQuantity": "Tổng số thuốc (dư thừa)",
+    "numberPerDay": "Số lượng 1 ngày",
+    "note": "HDSD",
+    "period": "Giai đoạn phác đồ",
+    "action": "Hành động",
+    "source": "Nguồn"
+  },
+  "concept": {
+    "title": "Khái niệm",
+    "code": "Mã khái niệm",
+    "name": "Tên khái niệm",
+    "type": "Loại khái niệm",
+    "parent": "Phụ thuộc",
+    "description": "Mô tả",
+    "data_type": "Loại giá trị",
+    "ref_range_height": "Giới hạn cao",
+    "ref_range_low": "Giới hạn thấp",
+    "ref_range_text": "Giới hạn chữ",
+    "resultType": "Trả về kết quả",
+    "specimenType": "Loại bệnh phẩm"
+  },
+  "country": {
+    "title": "Quốc gia",
+    "code": "Mã quốc gia",
+    "name": "Tên quốc gia",
+    "description": "Mô tả"
+  },
+  "religion": {
+    "title": "Tôn giáo",
+    "code": "Mã tôn giáo",
+    "name": "Tên tôn giáo",
+    "description": "Mô tả"
+  },
+  "occupation": {
+    "title": "Nghề nghiệp",
+    "code": "Mã",
+    "name": "Tên",
+    "description": "Mô tả"
+  },
+  "concept_lab_test": {
+    "title": "Xét nghiệm",
+    "code": "Mã xét nghiệm",
+    "name": "Tên xét nghiệm",
+    "parent": "Phụ thuộc",
+    "description": "Mô tả",
+    "ref_range_low": "Giới hạn thấp",
+    "ref_range_height": "Giới hạn cao",
+    "ref_range_text": "Giới hạn chữ",
+    "data_type": "Loại giá trị"
+  },
+  "concept_diagnostic": {
+    "title": "Chẩn đoán",
+    "code": "Mã chẩn đoán",
+    "name": "Tên chẩn đoán",
+    "parent": "Phụ thuộc",
+    "description": "Mô tả",
+    "ref_range_low": "Giới hạn thấp",
+    "ref_range_height": "Giới hạn cao",
+    "ref_range_text": "Giới hạn chữ",
+    "data_type": "Loại giá trị"
+  },
+  "concept_symptom": {
+    "title": "Triệu chứng",
+    "code": "Mã triệu chứng",
+    "name": "Tên triệu chứng",
+    "parent": "Phụ thuộc",
+    "description": "Mô tả",
+    "ref_range_low": "Giới hạn thấp",
+    "ref_range_height": "Giới hạn cao",
+    "ref_range_text": "Giới hạn chữ",
+    "data_type": "Loại giá trị"
+  },
+  "conceptISF": {
+    "title": "Chẩn đoán hình ảnh",
+    "code": "Mã",
+    "name": "Tên",
+    "parent": "Phụ thuộc",
+    "description": "Mô tả",
+    "ref_range_low": "Giới hạn thấp",
+    "ref_range_height": "Giới hạn cao",
+    "ref_range_text": "Giới hạn chữ",
+    "data_type": "Loại giá trị"
+  },
+  "profession": {
+    "title": "Nghề nghiệp",
+    "code": "Mã nghề nghiệp",
+    "name": "Tên nghề nghiệp",
+    "description": "Mô tả"
+  },
+  "staff": {
+    "title": "Nhân viên y tế",
+    "code": "Mã nhân viên",
+    "description": "Mô tả",
+    "firstName": "Tên",
+    "lastName": "Họ",
+    "displayName": "Tên đầy đủ",
+    "birthDate": "Ngày sinh",
+    "gender": "Giới tính",
+    "phoneNumber": "Số điện thoại",
+    "email": "Email",
+    "idNumber": "CMND/CCCD"
+  },
+  "specimen": {
+    "title": "Mẫu bệnh phẩm",
+    "code": "Mã bệnh phẩm",
+    "name": "Tên bệnh phẩm",
+    "description": "Mô tả",
+    "specimenType": "Loại bệnh phẩm"
+  },
+  "confirm_dialog": {
+    "delete": {
+      "title": "Xác nhận xóa",
+      "text": "Bạn có chắc chắn muốn xóa bản ghi này?",
+      "agree": "Xác nhận",
+      "cancel": "Hủy"
+    },
+    "delete_list": {
+      "title": "Xác nhận xóa",
+      "text": "Bạn có chắc chắn muốn xóa những bản ghi này?",
+      "agree": "Xác nhận",
+      "cancel": "Hủy"
+    },
+    "confirm_close": {
+      "title": "Xác nhận huỷ",
+      "text": "Bạn có chắc chắn huỷ?",
+      "agree": "Xác nhận",
+      "cancel": "Hủy"
+    }
+  },
+  "sign_in": {
+    "title": "Đăng nhập"
+  },
+  "sign_up": {
+    "title": "Đăng ký",
+    "title_form": "Đăng ký tài khoản",
+    "info_login": "Thông tin đăng nhập"
+  },
+  "user": {
+    "title": "Tài khoản",
+    "person_info": "Thông tin người dùng",
+    "display_name": "Tên hiển thị",
+    "gender": "Giới tính",
+    "username": "Tên đăng nhập",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "re_password": "Nhập lại mật khẩu",
+    "current_password": "Mật khẩu hiện tại",
+    "new_password": "Mật khẩu mới",
+    "change_pass": "Đổi mật khẩu",
+    "remember_me": "Lưu tài khoản",
+    "password_match_message": "Mật khẩu không chính xác",
+    "password_message": "Mật khẩu quá ngắn",
+    "active": "Kích hoạt",
+    "role": {
+      "title": "Vai trò",
+      "name": "Tên",
+      "authority": "Quyền",
+      "createdBy": "Người tạo"
+    },
+    "org": {
+      "title": "Đơn vị y tế",
+      "type": "Loại Đơn Vị"
+    }
+  },
+  "role": {
+    "title": "Vai trò",
+    "name": "Tên",
+    "authority": "Quyền",
+    "createdBy": "Người tạo"
+  },
+  "tool_tip": {},
+  "serviceRequestForm": {
+    "title": "Bộ xét nghiệm",
+    "code": "Mã bộ xét nghiệm",
+    "name": "Tên bộ xét nghiệm",
+    "formType": "Loại bộ xét nghiệm"
+  },
+  "ethnics": {
+    "title": "Dân tộc",
+    "code": "Mã",
+    "name": "Tên",
+    "parent": "Phụ thuộc",
+    "description": "Mô tả"
+  },
+  "healthDepartment": {
+    "title": "Phòng ban y tế",
+    "code": "Mã phòng ban",
+    "name": "Tên phòng y tế",
+    "parent": "Phòng ban quản lý",
+    "healthOrg": "Đơn vị y tế"
+  },
+  "stockKeepingUnit": {
+    "title": "Đơn vị tính",
+    "code": "Mã đơn vị tính",
+    "name": "Tên đơn vị tính",
+    "description": "Mô tả"
+  },
+  "specimenType": {
+    "title": "Loại bệnh phẩm",
+    "code": "Mã",
+    "name": "Tên",
+    "description": "Mô tả"
+  },
+  "source": {
+    "title": "Nguồn",
+    "name": "Tên tiếng Việt",
+    "nameAbbreviation": "Tên viết tắt tiếng Việt",
+    "nameEnglish": "Tên tiếng Anh",
+    "nameEnglishAbbreviation": "Tên viết tắt tiếng Anh"
+  },
+  "shiftWork": {
+    "title": "Ca làm việc",
+    "name": "Ca làm",
+    "code": "Mã ca làm",
+    "organization": "Cơ sở",
+    "start": "Thời gian bắt đầu",
+    "end": "Thời gian kết thúc"
+  },
+  "region": {
+    "title": "Vùng miền",
+    "code": "Mã vùng miền",
+    "name": "Tên vùng miền",
+    "description": "Mô tả"
+  },
+  "medicationName": {
+    "title": "Tên thuốc",
+    "name": "Tên tiếng Việt",
+    "nameAbbreviation": "Tên viết tắt tiếng Việt",
+    "nameEnglish": "Tên tiếng Anh",
+    "nameEnglishAbbreviation": "Tên viết tắt tiếng Anh",
+    "type": "Loại thuốc",
+    "displaySequence": "Trình tự hiển thị",
+    "isPreviousRegimenTreatment": "Có trong phác đồ điều trị trước đây",
+    "isResultAntibiogram": "Có kết quả kháng sinh đồ"
+  },
+  "pulmonaryTBType": {
+    "title": "Phân loại lao phổi",
+    "name": "Tên loại lao phổi",
+    "code": "Mã loại lao phổi",
+    "description": "Mô tả",
+    "type": "Loại lao phổi"
+  },
+  "systemConfig": {
+    "title": "Cấu hình hệ thống",
+    "configKey": "Mã cấu hình",
+    "configValue": "Giá trị",
+    "note": "Ghi chú"
+  },
+  "store": {
+    "title": "Kho",
+    "code": "Mã kho",
+    "name": "Tên kho",
+    "organization": "Đơn vị",
+    "level": "Cấp"
+  },
+  "stockIn": {
+    "title": "Danh mục phiếu nhập kho",
+    "code": "Mã nhập kho",
+    "store": "Kho",
+    "dateIssue": "Ngày nhập",
+    "items": "Danh sách nhập kho",
+    "product": "Hàng hóa",
+    "stockKeepingUnit": "Đơn vị tính",
+    "quantity": "Số lượng",
+    "amount": "Thành tiền",
+    "price": "Đơn giá",
+    "coefficient": "Quy cách đóng gói"
+  },
+  "stockOut": {
+    "title": "Danh mục phiếu xuất kho",
+    "code": "Mã xuất kho",
+    "store": "Kho",
+    "dateIssue": "Ngày xuất",
+    "kind": "Loại xuất kho",
+    "items": "Danh sách xuất kho",
+    "product": "Hàng hóa",
+    "stockKeepingUnit": "Đơn vị tính",
+    "quantity": "Số lượng",
+    "amount": "Thành tiền",
+    "price": "Đơn giá",
+    "coefficient": "Quy cách đóng gói"
+  },
+  "product": {
+    "title": "Thuốc",
+    "code": "Mã Thuốc",
+    "name": "Tên Thuốc",
+    "description": "Mô tả",
+    "skus": "Danh sách đơn vị tính",
+    "sku": "Đơn vị tính",
+    "coefficient": "Quy cách đóng gói",
+    "isDefault": "Mặc định",
+    "addCategory": "Chọn danh mục",
+    "productType": "Loại hàng hóa",
+    "content": "Hàm lượng",
+    "unit": "Đơn vị",
+    "addSource": "Chọn nguồn",
+    "addConsignment": "Thêm lô",
+    "activeIngredient": "Hoạt chất",
+    "categories": "Danh mục thuốc"
+  },
+  "lot": {
+    "title": "Quản lý Lô hàng",
+    "code": "Mã lô",
+    "name": "Tên lô",
+    "dateIssue": "Ngày xuất",
+    "kind": "Loại lô"
+  },
+  "inventoryReport": {
+    "title": "Báo cáo tồn kho",
+    "index": "TT",
+    "inventoryBeginningPeriod": "Số lượng tồn kho đầu kỳ",
+    "batchCode": "Số lô",
+    "expiryDate": "Hạn dùng",
+    "input": "Nhập kho",
+    "output": "Xuất kho",
+    "exportTranferStore": "Xuất điều chuyển kho",
+    "exportUse": "Xuất sử dụng",
+    "numberInventory": "Số lượng tồn kho",
+    "remainingUsageTime": "Thời gian sử dụng còn lại",
+    "month": "Tháng",
+    "unitName": "Đơn vị tính"
+  },
+  "supplier": {
+    "title": "Nhà cung cấp",
+    "code": "Mã số thuế",
+    "name": "Tên nhà cung cấp",
+    "address": "Địa chỉ",
+    "type": "Loại",
+    "phoneNumber": "Số điện thoại",
+    "email": "Email",
+    "representative": "Người đại diện",
+    "country": "Quốc gia"
+  },
+  "category": {
+    "title": "Danh mục Thuốc",
+    "name": "Tên danh mục Thuốc",
+    "code": "Mã danh mục Thuốc",
+    "parent": "Danh mục Thuốc cha"
+  },
+  "attribute": {
+    "title": "Thuộc tính",
+    "code": "Mã",
+    "name": "Tên",
+    "description": "Mô tả",
+    "type": "Loại"
+  },
+  "activeIngredient": {
+    "title": "Hoạt chất",
+    "code": "Mã",
+    "name": "Tên",
+    "description": "Mô tả",
+    "type": "Loại",
+    "healthInsuranceCode": "Mã thẻ BHYT"
+  },
+  "biddingPackage": {
+    "title": "Gói thầu",
+    "code": "Mã",
+    "name": "Tên",
+    "description": "Mô tả",
+    "type": "Loại"
+  },
+  "purchaseOrder": {
+    "title": "Đơn hàng nhập",
+    "name": "Tên hàng",
+    "code": "Mã đơn hàng",
+    "dateOrder": "Ngày đặt hàng",
+    "paymentStatus": "Trạng thái thanh toán",
+    "supplier": "Nhà cung cấp",
+    "totalAmount": "Tổng tiền",
+    "totalAmountPayable": "Tổng tiền trả"
+  },
+  "deliveryPlace": {
+    "title": "Địa chỉ giao hàng",
+    "name": "Địa chỉ giao",
+    "code": "Mã địa chỉ",
+    "address": "Địa chỉ",
+    "phoneNumber": "Số điện thoại",
+    "description": "Mô tả",
+    "administrativeUnit": "Đơn vị hành chính"
+  },
+  "deliveryPartner": {
+    "title": "Đối tác giao hàng",
+    "name": "Tên đơn vị",
+    "code": "Mã đơn vị",
+    "shippingCost": "Giá vận chuyển",
+    "address": "Địa chỉ"
+  },
+  "shiftWorkChange": {
+    "title": "Danh sách giao ca",
+    "name": "Ca làm việc",
+    "code": "Mã giao ca",
+    "start": "Thời gian bắt đầu",
+    "end": "Thời gian kết thúc",
+    "organization": "Cơ sở"
+  },
+  "saleAssociate": {
+    "title": "Cộng tác viên bán hàng",
+    "code": "Mã cộng tác viên",
+    "startTime": "Thời gian bắt đầu",
+    "endTime": "Thời gian kết thúc",
+    "org": "Cơ sở",
+    "displayName": "Tên CTV"
+  },
+  "customer": {
+    "title": "Khách hàng"
+  },
+  "storeOrganization": {
+    "name": "Tên cơ sở",
+    "code": "Mã cơ sở",
+    "orgProductType": "Loại dịch vụ",
+    "title": "Cơ sở sử dụng dịch vụ"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "realm": "EMR",
+  "auth-server-url": "https://sso.globits.net/auth",
+  "ssl-required": "none",
+  "resource": "EmrClient",
+  "public-client": true
+}

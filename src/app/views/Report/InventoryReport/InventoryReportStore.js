@@ -1,0 +1,94 @@
+import { makeAutoObservable } from "mobx";
+import {
+  getDataInventoryReport,
+  getInputOutputInventoriesReport,
+} from "./InventoryReportService";
+import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
+import i18n from "i18n";
+import { InventorySearch } from "app/common/Model/SearchObject";
+
+export default class InventoryReportStore {
+  inventorySearch = new InventorySearch();
+  inventoryReport = [];
+  selectedInventoryReport = null;
+  shouldOpenEditorDialog = false;
+
+  constructor() {
+    makeAutoObservable(this);
+  }
+
+  loadInventoryReport = async () => {
+    const searchObject = {
+      ...this.inventorySearch,
+      storeId: this.inventorySearch?.store?.id,
+      productIds: this.inventorySearch?.listProduct?.map((item) => item?.id),
+      groupByFields: [
+        "category",
+        "product",
+        "transactionAtt",
+        "typeOfTransaction",
+        "lot",
+      ],
+    };
+
+    try {
+      let data = await getDataInventoryReport(searchObject);
+      this.inventoryReport = data.data;
+    } catch (error) {
+      toast.warning(i18n.t("toast.load_fail"));
+    }
+  };
+
+  handleChangeSearchObject = (values) => {
+    this.inventorySearch = values;
+    this.loadInventoryReport();
+  };
+
+  handleEditInventoryReport = (report) => {
+    this.selectedInventoryReport = report;
+    this.shouldOpenEditorDialog = true;
+  };
+
+  handleClose = () => {
+    this.shouldOpenEditorDialog = false;
+    // this.loadInventoryReport();
+  };
+
+  handleDownloadReportFile = () => {
+    let newSearchDto = {
+      ...this.inventorySearch,
+      storeId: this.inventorySearch?.store?.id,
+      productIds: this.inventorySearch?.listProduct?.map((item) => item?.id),
+      pageIndex: 1,
+      pageSize: 1000,
+      groupByFields: [
+        "category",
+        "product",
+        "transactionAtt",
+        "typeOfTransaction",
+        "lot",
+      ],
+    };
+    getInputOutputInventoriesReport(newSearchDto)
+      .then((res) => {
+        const url = window.URL.createObjectURL(new Blob([res.data]));
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "Báo Cáo Tồn Kho" + ".xlsx");
+        document.body.appendChild(link);
+        link.click();
+      })
+      .catch((error) => {
+        console.log(error);
+        toast.warning(i18n.t("toast.error"));
+      });
+  };
+
+  resetStore = () => {
+    this.inventorySearch = new InventorySearch();
+    this.inventoryReport = [];
+    this.selectedInventoryReport = null;
+    this.shouldOpenEditorDialog = false;
+  };
+}

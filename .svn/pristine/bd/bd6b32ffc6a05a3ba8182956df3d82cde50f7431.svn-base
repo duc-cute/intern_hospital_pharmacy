@@ -1,0 +1,21 @@
+.list-invoice {
+  @extend .bg-primary;
+  border-radius: 10px;
+  list-style: none;
+  display: flex;
+  max-width: 100%;
+  overflow-x: auto;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+
+  .item-invoice {
+    background-color: #338593;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+  }
+}

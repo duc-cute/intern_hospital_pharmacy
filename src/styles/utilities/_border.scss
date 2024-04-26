@@ -1,0 +1,47 @@
+//border-radius
+
+.rounded-4 {
+  border-radius: 4px !important;
+}
+
+.rounded-8 {
+  border-radius: 8px !important;
+}
+
+.rounded-20 {
+  border-radius: 20px !important;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+//border
+.border-none {
+  border: none !important;
+}
+
+.border-gray {
+border: 1px solid $gray;
+}
+
+.border-b-dotted {
+  border-bottom: 1px dotted $gray;
+}
+
+.border-transparent {
+  border: 1px solid transparent !important;
+}
+
+.border-color-blue:hover {
+  border-color: $blue !important;
+}
+
+.border-b-dashed {
+  border-bottom: 1px dashed black !important;
+}
+
+//outline
+.outline-none {
+  outline: none !important;
+}
